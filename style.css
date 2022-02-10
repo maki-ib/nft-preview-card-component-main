@@ -1,0 +1,135 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+    
+    font-family: 'outfit';
+}
+.container{
+    /* padding-left: 2%; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 5px 2px 40px ;
+    border-radius: 8px;
+    margin-left: 37%;
+    margin-right: 37%;
+    width: 26%;
+    padding-top: 2%; 
+    padding-bottom: 2%;
+}
+
+#img1{
+    margin-left: 8%;
+    width: 84%;
+    border-radius: 8px;
+    /* filter: saturate(100%);
+    -webkit-filter: saturate(100%); */
+}
+.img1:hover #img1{
+    cursor: pointer;
+    background-color: hsl(178, 100%, 50%);
+    /* opacity: 0.3; */
+    
+    /* filter: opacity(50%); */
+}
+.img1:hover #img2{
+    /* backdrop-filter: grayscale(1) contrast(3) blur(1px); */
+    background-color: hsl(178, 100%, 50%);
+    visibility:visible;
+    opacity: 0.5;
+    cursor: pointer;    
+}
+.img1{
+    position:relative;
+}
+#img2{
+    /* background-color: hsl(178, 100%, 50%); */
+    position:absolute;
+    visibility:hidden;
+   /* /* top:40%; */
+   left:8%;
+   opacity:0;
+   transition:all 0.3s;
+   padding: 35%;
+   border-radius: 8px;
+   /* padding-left: 50px; */
+   /* width: 15%; */
+}
+.img2{
+    width: 12%;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+.text{
+    margin-left: 8%;
+    width: 84%;
+    color:hsl(215, 51%, 70%)
+}
+h3:hover, .created:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+h3,.created{
+    color: hsl(0, 0%, 100%);
+}
+.eth{
+    color: hsl(178, 100%, 50%);
+}
+.eth, .days{
+    display: inline-block;
+    margin-top: 10px;
+}
+.days{
+    float: right;
+}
+.img2, .create{
+    display: inline-block;
+}
+.create{
+   float: right;
+   margin-top: 10px;
+   margin-right: 55px;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    height: 0.5px;
+    color: rgba(245, 245, 245, 0.356);
+    background-color:  hsl(215, 32%, 27%);
+    box-shadow: 2px 5px 40px;
+}
+p{
+    font-size: 18px;
+}
+.icon,.icon-text{
+    display: inline-block;
+}
+.icon-text{
+    float: right;
+    margin-top: -2px;
+    margin-left: 10px;
+}
+@font-face {
+    font-family: 'outfit';
+    src: url('static/Outfit-Regular.ttf');
+    weight:300;
+}
+@media all and (max-width: 375px)
+{
+    .container{
+        /* padding-left: 2%; */
+        margin-top: 15%;
+        margin-bottom: 15%;
+        background-color: hsl(216, 50%, 16%);
+        box-shadow: 5px 2px 40px ;
+        border-radius: 10px;
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 94%;
+        padding-top: 5%; 
+        padding-bottom: 5%;
+    }
+    p{
+        font-size: 16px;
+    }
+}

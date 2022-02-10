@@ -7,27 +7,44 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | NFT preview card component</title>
-
+  <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 20px;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div  class="container">
+    <div class="img1">
+      <img id="img1" src="images/image-equilibrium.jpg" alt="">
+      <img src="images/icon-view.svg" alt="" id="img2">
+    </div>    
+    <div class="text">
+      <h3>
+        Equilibrium #3429
+      </h3>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="eth">
+        <img class="icon" src="images/icon-ethereum.svg" alt="">
+        <span class="icon-text">0.041 ETH</span>
+      </div>
+      <div class="days">
+        <img class="icon" src="images/icon-clock.svg" alt="">
+        <span class="icon-text">3 days left</span>
+      </div>
+      <hr>
+      <img class="img2" src="images/image-avatar.png" alt="">
+      <div class="create">
+        Creation of<span class="created"> Jules Wyvern</span>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/maki-ib/">maki-ib</a>.
+      </div>
+    </div>
+    
   </div>
 </body>
 </html>
